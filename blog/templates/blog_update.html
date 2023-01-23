@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+ Blogs
+{% endblock %}
+{% block main %}
+
+<h1 class="m-5">Blog with id {{blog.id}}</h1>
+
+
+<div class="container m-5 border">
+    <form method="post">
+        <input type="string"  name="title" value='{{blog.title}}'/>
+        <input type="text" name="body" value="{{blog.body}}"/>
+        <input type="submit">
+    </form>
+    
+</div>
+
+{% endblock %}
